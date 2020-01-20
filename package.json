@@ -4,16 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:app": "webpack -w",
+    "build:app": "NODE_ENV='production' webpack",
+    "dev:server": "webpack-dev-server"
   },
   "author": "Oka (https://github.com/okatechnology)",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@types/react-dom": "^16.9.4",
+    "react-dom": "^16.12.0"
+  },
   "devDependencies": {
+    "@okatechnology/eslint-config": "0.0.7",
     "@types/react": "^16.9.17",
+    "@types/styled-components": "^4.4.2",
+    "@types/terser-webpack-plugin": "^2.2.0",
+    "@types/webpack": "^4.41.2",
+    "eslint": "^6.8.0",
     "react": "^16.12.0",
+    "styled-components": "^5.0.0",
+    "terser-webpack-plugin": "^2.3.2",
+    "ts-node": "^8.6.2",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }
