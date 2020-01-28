@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tmp = () => {
-  return <div>Test data</div>;
+  return <div>♪(๑ᴖ◡ᴖ๑)♪</div>;
 };
 
 export default Tmp;
