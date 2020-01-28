@@ -15,6 +15,11 @@ export default (): Configuration => ({
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'style.css',
+    }),
+  ],
   module: {
     rules: [
       {
@@ -37,7 +42,7 @@ export default (): Configuration => ({
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
