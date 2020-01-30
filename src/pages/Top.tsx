@@ -3,19 +3,19 @@ import BaseButton from '../components/BaseButton';
 
 const links: ToppageLink[] = [
   {
-    name: '服',
+    name: 'clothes',
     background: 'red',
     to: 'clothes',
     useAble: true,
   },
   {
-    name: '食べ物',
+    name: 'food',
     background: 'blue',
     to: '',
     useAble: false,
   },
   {
-    name: '電子機器',
+    name: 'Electronics',
     background: 'green',
     to: '',
     useAble: false,
