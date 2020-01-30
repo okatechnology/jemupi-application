@@ -6,10 +6,16 @@ interface BaseButtonProps {
   height: string;
   width: string;
   children: string | JSX.Element;
-  useAble: boolean;
+  useable: boolean;
 }
 
 interface ToppageLink
   extends Omit<BaseButtonProps, 'children' | 'color' | 'height' | 'width' | 'fontSize'> {
   name: string;
+}
+
+interface ItemData {
+  type: 'clothes';
+  name: string;
+  imagePath: string;
 }
