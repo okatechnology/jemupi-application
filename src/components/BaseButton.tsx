@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const BaseButton = (props: BaseButtonProps) => {
   return (
     <>
-      {props.useAble === false ? (
+      {props.useable === false ? (
         <NotInServiceButton
           onClick={(e) => {
             e.preventDefault();

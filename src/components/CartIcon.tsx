@@ -8,7 +8,7 @@ const CartIcon = () => {
       background="white"
       fontSize="4rem"
       height="auto"
-      useAble={true}
+      useable={true}
       width="auto"
       to="/cart"
     >

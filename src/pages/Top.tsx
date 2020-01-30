@@ -6,19 +6,19 @@ const links: ToppageLink[] = [
     name: 'clothes',
     background: 'red',
     to: 'clothes',
-    useAble: true,
+    useable: true,
   },
   {
     name: 'food',
     background: 'blue',
     to: '',
-    useAble: false,
+    useable: false,
   },
   {
     name: 'Electronics',
     background: 'green',
     to: '',
-    useAble: false,
+    useable: false,
   },
 ];
 
@@ -33,7 +33,7 @@ const Top = () => {
           height={`${window.innerHeight / 3}px`}
           width="100%"
           fontSize="5rem"
-          useAble={item.useAble}
+          useable={item.useable}
           key={item.name}
         >
           {item.name}

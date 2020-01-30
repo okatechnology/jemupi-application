@@ -12,7 +12,7 @@ const Title = () => {
         fontSize="2rem"
         height="auto"
         to=""
-        useAble={false}
+        useable={false}
         width="auto"
       >
         🔍
