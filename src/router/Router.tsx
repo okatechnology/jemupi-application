@@ -8,7 +8,11 @@ const Router = () => {
     <HashRouter>
       <Switch>
         <Route exact path="/" render={() => <Top />} />
-        <Route exact path="/choose/:item" render={(props) => <Choose />} />
+        <Route
+          exact
+          path="/choose/:item"
+          render={({ match }) => <Choose pagename={match.params.item} />}
+        />
       </Switch>
     </HashRouter>
   );

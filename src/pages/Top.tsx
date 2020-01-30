@@ -28,7 +28,7 @@ const Top = () => {
       {links.map((item) => (
         <BaseButton
           background={item.background}
-          to={`choose/${item.to}`}
+          to={`/choose/${item.to}`}
           color="white"
           height={`${window.innerHeight / 3}px`}
           width="100%"
