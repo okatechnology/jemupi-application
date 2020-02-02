@@ -15,9 +15,11 @@ const Choose = ({ pagename }: ChooseProps) => {
       <Header />
       <FakeAD />
       <ItemWrapper>
-        {itemData.map((item) => {
+        {itemData.map((item, n) => {
           if (item.type === pagename) {
-            return <Item name={item.name} path={item.imagePath} key={item.name} />;
+            return (
+              <Item name={item.name} path={item.imagePath} index={n} key={item.name} />
+            );
           }
         })}
       </ItemWrapper>

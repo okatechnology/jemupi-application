@@ -9,10 +9,12 @@ const BaseButton = (props: BaseButtonProps) => {
         <NotInServiceButton
           onClick={(e) => {
             e.preventDefault();
-            alert('今はまだ使えません\nNot yet available');
+            alert('Not yet available');
           }}
           {...props}
         />
+      ) : props.to === '' ? (
+        <CustomButton {...props} />
       ) : (
         <CustomLink {...props} />
       )}
@@ -29,11 +31,16 @@ const styleCreator = css<StyleProps>`
   height: ${({ height }) => height};
   width: ${({ width }) => width};
   color: ${({ color }) => color};
-  background-color: ${({ background }) => background};
   font-size: ${({ fontSize }) => fontSize};
+  background-color: ${({ background }) => background};
+  background-image: url(${({ bgImage }) => (bgImage ? bgImage : '')});
 `;
 
 const CustomLink = styled(Link)`
+  ${styleCreator}
+`;
+
+const CustomButton = styled.div`
   ${styleCreator}
 `;
 
