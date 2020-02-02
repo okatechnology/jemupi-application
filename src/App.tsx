@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import GlobalStyle from './global/GlobalStyle';
 import Router from './router/Router';
 import { GlobalStateProvider } from './global/ChooseContext';
 
@@ -17,7 +16,6 @@ const App = () => {
   return (
     <>
       <GlobalStateProvider>
-        <GlobalStyle />
         <Router />
       </GlobalStateProvider>
     </>
