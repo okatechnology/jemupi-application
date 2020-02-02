@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Router from './router/Router';
 import { GlobalStateProvider } from './global/ChooseContext';
+import GlobalStyle from './global/GlobalStyle';
 
 const App = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <>
       <GlobalStateProvider>
+        <GlobalStyle />
         <Router />
       </GlobalStateProvider>
     </>
