@@ -6,7 +6,7 @@ const FakeAD = () => {
     <CustomDiv
       onClick={(e) => {
         e.preventDefault();
-        alert('今はもう募集してません\nWe are no longer recruiting now');
+        alert('We are no longer recruiting now');
       }}
     >
       Clerks Wanted!!!
