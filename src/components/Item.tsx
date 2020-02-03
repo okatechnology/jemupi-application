@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import useGlobalState from '../global/ChooseContext';
+import { Link } from 'react-router-dom';
 
 interface ItemProps {
   name: string;
@@ -14,7 +15,9 @@ const Item = ({ name, path, index }: ItemProps) => {
   return (
     <>
       <CustomWrapper chosen={chosenItemData[index] > 0}>
-        <CustomImg src={path} />
+        <Link to={`/details/${index}`}>
+          <CustomImg src={path} />
+        </Link>
         <CustomText>{name}</CustomText>
         <ItemDataWrapper>
           <Button onClick={hundleMinus(index)}>-</Button>
